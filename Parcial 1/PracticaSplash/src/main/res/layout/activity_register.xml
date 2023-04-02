@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/background_app">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_register"
+        android:textColor="@color/grisClaro" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/textView2"
+            style="@style/form_input"
+            android:layout_height="48dp"
+            android:hint="@string/txt_user_name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtLastName"
+            style="@style/form_input"
+            android:layout_height="48dp"
+            android:hint="@string/txt_lastname"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            style="@style/form_input"
+            android:layout_height="48dp"
+            android:hint="@string/txtEmail"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            style="@style/form_input"
+            android:layout_height="48dp"
+            android:hint="@string/txtPassword"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_primary"
+            android:text="@string/txt_crear_cuenta"
+            android:textColor="@drawable/btn_text_color"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

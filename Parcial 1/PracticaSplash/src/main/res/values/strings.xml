@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Splash</string>
+
+    <string name="contentSplash">Splash String</string>
+    <string name="title_register">Registrar</string>
+    <string name="txt_user_name">Nombre</string>
+    <string name="txt_lastname">Apellido</string>
+    <string name="txtEmail">Correo electrónico</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="txt_crear_cuenta">Crear cuenta</string>
+</resources>
