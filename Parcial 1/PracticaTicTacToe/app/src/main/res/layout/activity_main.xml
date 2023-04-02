@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="cambiarBtn"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Tic-Tac-Toe"
+        android:textColor="#8BC34A"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Alejandra Cituk"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="350dp"
+
+
+        android:layout_height="350dp"
+        android:layout_marginBottom="44dp"
+        android:background="#FDFDFD"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autor"
+        app:layout_constraintVertical_bias="0.343">
+
+        <TableRow
+            android:id="@+id/fila1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/f1_btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
+            <ImageButton
+                android:id="@+id/f1_btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
+            <ImageButton
+                android:id="@+id/f1_btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/f2_btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
+            <ImageButton
+                android:id="@+id/f2_btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
+            <ImageButton
+                android:id="@+id/f2_btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/f3_btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
+            <ImageButton
+                android:id="@+id/f3_btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
+            <ImageButton
+                android:id="@+id/f3_btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila4"
+            android:layout_width="317dp"
+            android:layout_height="23dp"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioBtnX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="X" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="O" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
